@@ -1,0 +1,511 @@
+"""
+1)What is Python?
+ANS:-
+Python is a high-level, interpreted, interactive and object-oriented scripting language.The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.Python is used to develop web applications, desktop applications, games and datascience and machine learning projects.
+
+2)Q)What are the Features of Python?
+ANS:-
+->Easy to install and un-install
+->Easy to upgrade
+->Easy  to read and write
+->Open source (completely free)
+->Community support.
+->It is a plateform Independent.
+->It supports functional and structured programming methods as well as OOP.
+->It supports automatic garbage collection.
+->It can be used as a scripting language or can be compiled to byte-code for building large applications.
+->It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
+
+
+3)Q)What are the advantages of Python?
+ANS:-
+->The main Python language advantages are that it is easy to read and easy to learn.
+->It is easier to write a program in Python than in C or C++. 
+-> Open source and community development.
+->High-level language.
+->User-friendly data structures.
+->Object-oriented language.
+->Portable and Interactive.
+
+
+
+4Q)What are the disadvantages of Python?
+ANS:-
+->The language is seen as less suitable for mobile development and game development.
+->Python has is the runtime error,The programmer has the possibility to see bugs only during run time.
+->Python has high memory consumption and is not used in web browsers because it is not secure. 
+->Python is slower than C or C++. But of course, Python is a high-level language, unlike C or C++ it's not closer to hardware.
+
+
+5Q)Applications of Python?
+ANS:-
+->1) Web Applications
+We can use Python to develop web applications. It provides libraries to handle internet protocols such as HTML and XML, JSON, Email processing, request, beautifulSoup, Feedparser, etc. One of Python web-framework named Django is used on Instagram. Python provides many useful frameworks, and these are given below:
+Django and Pyramid framework(Use for heavy applications)
+Flask and Bottle (Micro-framework)
+Plone and Django CMS (Advance Content management)
+->2) Desktop GUI Applications
+The GUI stands for the Graphical User Interface, which provides a smooth interaction to any application. Python provides a Tk GUI library to develop a user interface. Some popular GUI libraries are given below.
+Tkinter or Tk
+wxWidgetM
+Kivy (used for writing multitouch applications )
+PyQt or Pyside
+->3)Software Development
+Python is useful for the software development process. It works as a support language and can be used to build control and management, testing, etc.
+->4)Business Applications
+Business Applications differ from standard applications. E-commerce and ERP are an example of a business application. This kind of application requires extensively, scalability and readability, and Python provides all these features.
+->5)Audio or Video-based Applications
+Python is flexible to perform multiple tasks and can be used to create multimedia applications. Some multimedia applications which are made by using Python are TimPlayer, cplay, etc. The few multimedia libraries are given below.
+->6)Enterprise Applications
+Python can be used to create applications that can be used within an Enterprise or an Organization. Some real-time applications are OpenERP, Tryton, Picalo, etc.
+->7)Image Processing Application
+Python contains many libraries that are used to work with the image. The image can be manipulated according to our requirements. Some libraries of image processing are given below.
+OpenCV
+Pillow
+SimpleITK
+
+
+
+6Q)Q)Why Python?
+ANS:-
+->Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+->Python has a simple syntax similar to the English language.
+->Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+->Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+->Python can be treated in a procedural way, an object-orientated way or a functional way.
+
+7Q)How is Python an interpreted language?
+ANS:-
+Python program runs directly from the source code.
+Python converts source code written by the programmer into intermediate language which is again translated into the native language / machine language that is executed. So Python is an Interpreted language.
+Python is also interactive where it can prompt and interact with the interpreter directly to write the programs.
+
+8Q)How is memory managed in Python?
+ANS:-
+->Memory management in python is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have access to this private heap. The python interpreter takes care of this instead.
+->The allocation of heap space for Python objects is done by Python’s memory manager. The core API gives access to some tools for the programmer to code.
+->Python also has an inbuilt garbage collector, which recycles all the unused memory and so that it can be made available to the heap space.
+
+9Q) What is namespace in Python?
+Ans: A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+
+10Q)Is python case sensitive?
+Ans: Yes. Python is a case sensitive language.
+
+===================================================================================================================================================================================
+
+11Q)What is the difference between list and tuples in Python?
+ANS:-
+LIST:-
+-----
+Lists are mutable i.e they can be edited.	
+List iteration is slower and is time consuming.
+List is useful for insertion and deletion operations.	
+List consumes more memory.	
+List provides many in-built methods.	
+Lists are surrounded by square brackets [] 
+Syntax: list_1 = [10, ‘Chelsea’, 20]	
+
+TUPLES:-
+------
+Tuples are immutable (tuples are lists which can’t be edited).
+Tuple iteration is faster.
+Tuple is useful for readonly operations like accessing elements.
+Tuples consumes less memory.
+Tuples have less in-built methods.
+Tuples are surrounded by parenthesis ()
+Syntax: tup_1 = (10, ‘Chelsea’ , 20)
+
+
+12Q) What type of language is python? Programming or scripting?
+ANS:-
+Python is capable of scripting, but in general sense, it is considered as a general-purpose programming language. 
+                   (OR)
+Yes, Python is a scripting language.
+It is also an interpreted and high-level programming language for the purpose of general programming requirements.
+
+13Q)What is pep 8?
+ANS:-
+PEP stands for Python Enhancement Proposal. It is a set of rules that specify how to format Python code for maximum readability.
+1. Use 4-space indentation and no tabs
+2. Use docstrings 
+There are both single and multi-line docstrings that can be used in Python. However, the single line comment fits in one line, triple quotes are used in both cases. These are used to define a particular program or define a particular function.
+3. Wrap lines so that they don’t exceed 79 characters 
+4. Use of regular and updated comments are valuable to both the coders and users
+5. Use of trailing commas 
+5. Use Python’s default UTF-8 or ASCII encodings and not any fancy encodings
+6. Use spaces around operators and after commas, but not directly inside bracketing constructs
+7. Naming Conventions 
+There are few naming conventions that should be followed in order to make the program less complex and more readable.
+8. Characters that should not be used for identifiers
+9. Don’t use non-ASCII characters in identifiers 
+10. Name your classes and functions consistently 
+11. While naming of function of methods always use self for the first argument 
+
+
+14Q)What is PYTHONPATH?
+Ans: It is an environment variable which is used when a module is imported. Whenever a module is imported, PYTHONPATH is also looked up to check for the presence of the imported modules in various directories. The interpreter uses it to determine which module to load.
+
+
+15Q) What are python modules? Name some commonly used built-in modules in Python?
+ANS:-Python modules are files containing Python code. This code can either be functions classes or variables. A Python module is a .py file containing executable code.
+Some of the commonly used built-in modules are:
+os
+sys
+math
+random
+data time
+JSON
+
+
+16Q)What are local variables and global variables in Python?
+ANS:-
+Global Variables:-
+Variables declared outside a function or in global space are called global variables. These variables can be accessed by any function in the program.
+Local Variables:-
+Any variable declared inside a function is known as a local variable. This variable is present in the local space and not in the global space.
+When you try to access the local variable outside the function, it will throw an error.
+
+
+17Q)What is type conversion in Python?
+ANS:-
+Type conversion refers to the conversion of one data type into another.
+int() – converts any data type into integer type
+float() – converts any data type into float type
+ord() – converts characters into integer
+hex() – converts integers to hexadecimal
+oct() – converts integer to octal
+complex(real,imag) – This functionconverts real numbers to complex(real,imag) number.
+str() – Used to convert integer into a string.
+tuple() – This function is used to convert to a tuple.
+list() – This function is used to convert any data type to a list type.
+dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
+set() – This function returns the type after converting to set.
+
+18Q)Is indentation required in python?
+ANS:-
+Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc is specified within an indented block. It is usually done using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well.
+
+
+19Q) What is the difference between Python Arrays and lists?
+ANS:-
+Arrays and lists, in Python, have the same way of storing data.
+Python Lists:-
+List can store the multiple elements with different datatypes.
+
+Python Arrays:-
+Arrays can store the multiple elements with same datatypes.
+
+
+20Q)What are functions in Python
+ANS:-
+A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used.
+===================================================================================================================================================================================
+
+
+21Q)What is __init__?
+Ans: __init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
+
+
+22Q)What is a lambda function?
+ANS:-
+Ans: A lambda function is a small anonymous function. We use lambda functions when we require a nameless function for a short period of time.
+This function can have any number of parameters but, can have just one statement.
+Syntax:-
+lambda arguments: expression
+
+
+23Q)What is self in Python?
+ANS:-
+Self is an instance or an object of a class. In Python, this is explicitly included as the first parameter.  It helps to differentiate between the methods and attributes of a class with local variables.
+The self variable in the init method refers to the newly created object while in other methods, it refers to the object whose method was called.
+
+
+24Q)How does break, continue and pass work?
+
+ANs:-
+Break:-Break is a Keyword.Which is used when you want to exit from the loop at some condittn meets.
+Continue:-Continue is a Keyword which is used when you want to skip the iteration at some  contion meets.
+Pass:Pass is a Keyword,which represents the Null Operation.The pass statement is generally used as a placeholder i.e. when the user does not know what code to write.
+When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed.
+
+
+25Q)How do you write comments in python?
+Ans:-
+Comments in Python start with a # character.Comments can be used to explain Python code.Python does not really have a syntax for multi line comments.
+To add a multiline comment you could insert a # for each line.However, alternatively at times, commenting is done using docstrings(strings enclosed within triple quotes).
+
+26Q)What is pickling and unpickling?
+Ans: Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
+
+27Q) What are the generators in python?
+Ans: Functions that return an iterable set of items are called generators."yield" is aspecial Keyword which will make your function as a Generator.
+
+28Q)What are docstrings in Python?
+Ans: Docstrings are not actually comments, but, they are documentation strings. These docstrings are within triple quotes. They are not assigned to any variable and therefore, at times, serve the purpose of comments as well.
+
+
+29Q)What are the built-in type does python provides?
+ANS:-
+There are mutable and Immutable types of Pythons built in types Mutable built-in types
+List
+Sets
+Dictionaries
+Immutable built-in types:-
+Strings
+Tuples
+Numbers
+
+30Q) How will you capitalize the first letter of string?
+Ans: In Python, the capitalize() method capitalizes the first letter of a string. If the string already consists of a capital letter at the beginning, then, it returns the original string.
+===================================================================================================================================================================================
+
+31Q)How can you randomize the items of a list in place in Python?
+ANS:-Items of List can be randomied by using shuffle().To use shuffle, import the Python random package by adding the line import random near the top of your program.
+Then, if you have a list called x, you can call random.shuffle(x).So ,it will randomize your List Items.
+
+32Q) What are python iterators?
+ANS:-
+Iterator in python is an object that is used to iterate over iterable objects like lists, tuples, dicts and sets. Iterator object is initialised using the iter() method. It uses the next() method for iteration.
+
+
+33Q)How can you generate random numbers in Python?
+ANS:-
+Random module is the standard module that is used to generate a random number.
+To generate random numbers in Python, you need to import command as
+import random
+random.random()
+This returns a random floating point number in the range [0,1]
+
+34Q)How will you convert a string to all lowercase?
+ANS:-
+The Python built-in function lower() can be used to convert a string into lowercase.lower() method converts all uppercase characters in a string into lowercase characters and returns it.
+Syntax:-
+string.lower()
+
+35Q)How to comment multiple lines in python?
+ANS:-
+Multi-line comments appear in more than one line.Python does not really have a syntax for multi line comments.To add a multiline comment you could insert a # for each line.
+
+36Q)What is the purpose of is, not and in operators?
+ANS:-
+Operator:-Operator is an Special symbol which is used to perform logical or mathematical operations on varaibles.
+is:Is Operator returns True if both  variables are the same object otherwise returns false
+is not:is not Operator return True if both variables are not the same object otherwise false
+in:in Operator returns True if it finds specified element in sequence otherwise returns false.
+
+37Q)What is the usage of help() and dir() function in Python?
+ANS:-
+Help() and dir() both functions are accessible from the Python interpreter.
+Help() function: The help() function is used to display the documentation string and also facilitates you to see the help related to modules, keywords, attributes, etc.
+The syntax of help() is:
+help(object)
+Dir() function: The dir() function is used to display the defined symbols.The dir() function returns all properties and methods of the specified object, without the values.
+Syntax:-
+dir(object)
+
+38Q)What is a dictionary in Python?
+ANS:-
+Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.Dictionary is created is using curly brackets.
+It defines one-to-one relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
+We can access the items of dictionary using key name.we can also access items of dictionary using get() function.
+
+39Q)What does len() do?
+ANS:-
+len() is a built-in function in python. You can use the len() to get the length of the given string, array, list, tuple, dictionary, etc
+Syntax:-
+len(value)
+
+40Q)Explain split(), sub(), subn() methods of “re” module in Python?
+ANS:-
+To modify the strings, Python’s “re” module is providing 3 methods. They are:
+spilt():split the string into list,splitting it wherever regex pattern matches
+sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
+
+===================================================================================================================================================================================
+
+41Q)What does this mean: *args, **kwargs? And why would we use it?
+ANS:-
+In programming, we define a function to make a reusable code that performs similar operation. To perform that operation, we call a function with the specific value, this value is called a function argument in Python.
+In Python, we can pass a variable number of arguments to a function using special symbols. There are two special symbols:
+
+(1)*args (Non Keyword Arguments)
+(2)**kwargs (Keyword Arguments)
+->We use *args when we aren’t sure how many arguments are going to be passed to a function
+->**kwargs is used when we don’t know how many keyword arguments will be passed to a function
+
+
+42Q)What are negative indexes and why are they used?
+ANS:-
+The sequences in Python are indexed and it consists of the positive as well as negative numbers.
+Positive index starts from "0" which represents the first element in the sequence,"1" respresents the second element and so on..
+Negative index start from the end of the sequence "-1"which refers to the last item, -2 refers to the second last item etc.
+The negative index is used to remove any new-line spaces from the string and allow the string to except the last character that is given as S[:-1]. The negative index is also used to show the index to represent the string in correct order.
+
+
+43Q)What are Python packages?
+Ans: Python packages are namespaces containing multiple modules.
+In  Python e.ach package is a directory which MUST contain a special file called __init__.py. This file can be empty, and it indicates that the directory it contains is a Python package, so it can be imported the same way a module can be imported.
+
+
+44Q)How can files be deleted in Python?
+ANS:-
+To delete a file in Python, you need to import the OS Module. After that, you need to use the os.remove() function.
+The os.rmdir() method will remove a file or directory that’s empty. 
+Example:
+import os
+os.remove("xyz.txt")
+
+
+45Q)How to add values to a python array?
+ANS:-
+We can add values to an array in three ways :They are
+append(),insert(i,x),extend()
+append() is used to add new item into array.
+insert(i,x) is used to add new item into array at particular index.
+extend() is used to add more than one new items into an array.
+
+
+
+46Q)How to remove values to a python array?
+ANS:-
+Array elements can be removed using pop() or remove() method. 
+The difference between these two functions pop() returns the deleted value where as remove() will not return.
+
+
+47Q)What are Python libraries? Name a few of them?
+ANS:-
+Python libraries are a collection of Python packages. A Python library is a reusable part of code that you may want to include in your programs/ projects.
+Some of the majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more.
+
+48Q) Explain how can you make a Python Script executable on Unix?
+ANS:-
+To make a Python Script executable on Unix, you need to do two things,
+Script file's mode must be executable and
+the first line must begin with # ( #!/usr/local/bin/python
+
+
+49Q)What are Python decorators?
+ANS:-
+A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure.Decorators are usually called before the definition of a function you want to decorate.They are represented by the @decorator_name in Python and are called in bottom-up fashion.
+
+
+50Q)How are arguments passed by value or by reference?
+ANS:-
+Call by value :- In the event of passing an arguments like numbers, strings and tuples to a function, the passing is like a "call by value" because we can't change the value of immutable objects being passed to the function.
+Call by reference :- passing mutable objects to the function can be considered as a call by reference because their values can be changed the inside the function.
+===================================================================================================================================================================================
+
+
+51Q)What is Ooops?
+Ans:-
+->All programs are a kind of a object oriented programming languages Like c,c++,java etc
+When we come to the Python,python can be used as a object oriented programming language as well as functional programming alanguage and as well as Procedural language also.
+In Python each and everything we can take it as an Object.When you import any modules or any libraries ,each and everything you are assign to the any variable and you are calling them.so ,you are  proceesing all  your data in the maner of Objects.You calling evething is a objects in Python.
+->One Object may have a dfference attribues and different methods.Here in cases attrinbutes are a kind of what are things we are passing to that functions.Here all functions we arecollecting as a Methods.In such cases we assigning all the classes.So,To achive this kind of stuff we are maintainig as a classes,inside the classes methods in oops.To achive that oops concept in our program we can catogarize like a classes inside the classes methods (Methods are nothing but an a functions) and while we are creating the classes we can initiates the attributes (Here attributes are nothing nut an a variables).
+->we can create our projects structure or programming structure very easy by defining that object.
+
+52Q)What are the main features of OOPs?
+Ans:-
+Inheritance
+Encapsulation
+Polymorphism
+Data Abstraction
+
+
+53Q)What is an Object?
+Ans:-
+Object:-
+-------
+The object is an entity that has state and behavior. It may be any real-world object like the mouse, keyboard, chair, table, pen, etc.Everything in Python is an object, and almost everything has attributes and methods. All functions have a built-in attribute __doc__, which returns the doc string defined in the function source code.
+
+
+54Q)What is the class?
+Ans:-
+->Class is an blueprint/plan/template that describes the details of an object.
+Classes are created by keyword class.
+Attributes are the variables that belong to class.
+Attributes are always public and can be accessed using dot (.) operator. Eg.: Myclass.Myattribute
+Class is a logical entity that has some specific attributes and methods. For example: if you have an employee class then it should contain an attribute and method, i.e. an email id, name, age, salary, etc.
+
+55Q)What is the method in class?
+Ans:-
+Method:-
+-------
+Function that belongs to a class is called an Method.
+‘def’ keyword is used to create a new method.
+
+56Q)What is Inheritance?
+Ans:-
+Inheritance:-
+-----------
+Deriving a new class from an old one is called inheritance. The old class is called superclass and the new one is called subclass.
+Inheritance provides code reusability, makes it easier to create and maintain an application.
+
+
+57Q)What are the types of Inheritance?
+Ans:-
+They are different types of inheritance supported by Python:
+(i)Single Inheritance – where a derived class acquires the members of a single super class.
+(ii)Multi-level inheritance – a derived class d1 in inherited from base class base1, and d2 are inherited from base2.
+(iii)Hierarchical inheritance – from one base class you can inherit any number of child classes
+(ivMultiple inheritance – a derived class is inherited from more than one base class.
+
+58Q)What is a superclass?
+Ans:-
+A superclass or base class is a class that acts as a parent to some other class or classes. For example, the Vehicle class is a superclass of class Car.
+
+
+59Q)What is a subclass?
+A class that inherits from another class is called the subclass. For example, the class Car is a subclass or a derived of Vehicle class.
+
+
+60Q) Does python support multiple inheritance?
+Ans: Multiple inheritance means that a class can be derived from more than one parent classes. Python does support multiple inheritance, unlike Java.
+
+===================================================================================================================================================================================
+
+
+61Q)What is Polymorphism in Python?
+Ans: Polymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also can have a method with the same name ABC having its own parameters and variables. Python allows polymorphism.By polymorphism, we understand that one task can be performed in different ways.
+
+
+62Q) Define encapsulation in Python?
+Ans: Encapsulation means binding the code and the data together. A Python class in an example of encapsulation.
+
+
+63Q) How do you do data abstraction in Python?
+Ans: Data Abstraction is providing only the required details and hiding the implementation from the world. It can be achieved in Python by using interfaces and abstract classes.
+
+
+64Q) How to create an empty class in Python? 
+Ans: An empty class is a class that does not have any code defined within its block. It can be created using the pass keyword. However, you can create objects of this class outside the class itself. IN PYTHON THE PASS command does nothing when its executed. it’s a null statement. 
+
+
+65Q)What are the tools that help to find bugs or perform static analysis?
+Ans:-
+PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
+
+66Q)What is unittest in Python?
+Ans:-
+Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use (Source). It determines and ascertains the quality of your code.
+The unit test framework in Python is called unittest, which comes packaged with Python.
+
+67Q)In Python what is slicing?
+Ans:-
+A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing.
+
+68Q) How can you copy an object in Python?
+Ans:-
+To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
+
+69Q)How you can convert a number to a string?
+Ans:-
+In order to convert a number into a string, use the inbuilt function str(). If you want a octal or hexadecimal representation, use the inbuilt function oct() or hex().
+
+70Q)What is the difference between Xrange and range?
+Ans:-
+Xrange returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
+
+"""
