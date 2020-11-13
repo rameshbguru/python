@@ -1,0 +1,9 @@
+#Hangman2.py Read the this file in Program
+apple
+ball
+cat
+dog
+echo
+fan
+goat
+hat
