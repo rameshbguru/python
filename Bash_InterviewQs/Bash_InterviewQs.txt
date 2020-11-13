@@ -1,0 +1,312 @@
+"""
+
+1Q)What is bash?
+ANS:-
+BASH Stands for "Bourne-Again Shell".Bash is an command language interpreter, for the GNU operating system.It is widely available on various operating systems and is a default command interpreter on most GNU/Linux systems.
+
+2Q)What is Shell?
+ANS:-
+Shell is an interface between the user and the kernel. Even though there can be only one kernel; a system can have many shell running simultaneously. So, whenever a user enters a command through the keyboard, the shell communicates with the kernel to execute it and then display the output to the user.
+
+3Q)What is a Shell Script? Can you name some of its advantages? 
+ANS:-
+A sequence of commands saved to a file ad this file is nothing but shell script.Along with commands you can also add Programming Features i.e loops,functions,array etc.
+Advantages:-
+----------
+The command and syntax are exactly the same as those directly entered in command line, so programmer do not need to switch to entirely different syntax.
+Writing shell scripts are much quicker.
+Interactive debugging etc.
+Quick start.
+
+
+4Q)What are the different types of variables used in Shell Script?
+ANS:-
+A shell script has two types of variables :
+System-defined variables:-
+System-defined variables are created/defined by the Operating System(Linux) itself. These variables are generally defined in Capital Letters and can be viewed by “set” command.
+User-defined variables:-
+User-defined variables are created or defined by system users and the values of variables can be viewed by using the command “echo”.
+
+5Q) What are the different types of commonly used shells on a typical Linux system?
+ANS:-
+csh,ksh,bash,Bourne.The most commonly used and advanced shell used today is "Bash".
+
+6Q)What is the equivalent of a file shortcut that we have a window on a Linux system?
+ANS:-
+Shortcuts are created using "links" on Linux. There are two types of links that can be used namely "soft link" and "hard link".
+Hard Link:-
+Hard Link acts like a mirror copy of the original file. These links share the same inodes. Changes made to the original or hard-linked file will reflect in the other. When you delete Hard Link nothing will happen to the other file. Hard links can't cross file systems.You cannot create a Hard Link for a directory.
+Syntax:-
+ln <OriginalFile> <Link>
+
+Soft Link:-
+Soft Link is an actual link to the original file also know as symbolic link or symlinks. These Links will have a different Inodes value. The soft link points to the original file so if the original file is deleted then the soft link fails. If you delete the Soft Link, nothing will happen to file. The reason for this is, the actual file or directory’s inode is different from the "soft link" created file's inodes. Soft links can cross file systems.A Soft Link can link to a directory
+syntax:-
+ln -s <OriginalFile> <Link>
+
+7Q)Tell something about the Super Block in Shell scripting?
+ANS:-
+The superblock is a structure that represents a file system. It includes the necessary information to manage the file system during operation. It includes the file system name (such as ext4), the size of the file system and its state, a reference to the block device, and metadata information (such as free lists and so on).The superblock is typically stored on the storage medium but can be created in real time if one doesn't exist. You can find the superblock structure in ./linux/include/linux/fs.h.
+
+8Q)What are the various stages of a Linux process it passes through?
+ANS:-
+A Linux process generally passes through four stages:
+Waiting: The Linux process waits for the resource.
+Running: The Linux process is currently being executed.
+Stopped: The Linux process is stopped after successful execution.
+Zombie: The process has stopped but is still active in the process table.
+
+
+9Q)What is GUI scripting?
+ANS:-
+GUI is used for controlling a computer and its applications. GUI scripting supports different applications. It mostly depends on the operating system.
+
+
+10Q)Shell programs are stored in which file?
+Answer:-
+Shell programs are stored in a file called sh.
+
+===================================================================================================================================================================================
+11Q)What is the difference between break and continue commands?
+Ans:-
+Break:-Break is a Keyword.Which is used when you want to exit from the loop at some condittn meets.
+Continue:-Continue is a Keyword which is used when you want to skip the iteration at some  contion meets.
+
+12Q)How would you compare the strings in a Shell Script?
+Ans:-
+The test command is used to compare the text strings.The test command compares text strings by comparing each character in each string.
+
+13Q) How to redirect both standard output and standard error to the same location?
+ANS:-
+The two methods to redirect standard output and standard error to the same location are the following;
+(i)2>&1(# ls /usr/share/doc > out.txt 2>&1 )
+(ii)&>(# ls /usr/share/doc &> out.txt )
+
+14Q)What is the lifespan of a variable inside a shell script?
+ANS:-The lifespan of a variable inside shell script is only until the end of execution.
+
+15Q)What is a file system?
+Ans:-
+The file system is a collection of files which contain information related to the files.
+When we install the Linux operating system, Linux offers many file systems such as Ext, Ext2, Ext3, Ext4, JFS, ReiserFS, XFS, btrfs, and swap.
+(i) Ext, Ext2, Ext3 and Ext4 file system:-
+The file system Ext stands for Extended File System. It was primarily developed for MINIX OS. The Ext file system is an older version, and is no longer used due to some limitations.
+Ext2 is the first Linux file system that allows managing two terabytes of data. Ext3 is developed through Ext2; it is an upgraded version of Ext2 and contains backward compatibility. The major drawback of Ext3 is that it does not support servers because this file system does not support file recovery and disk snapshot.
+Ext4 file system is the faster file system among all the Ext file systems. It is a very compatible option for the SSD (solid-state drive) disks, and it is the default file system in Linux distribution.
+(ii) JFS File System:-
+JFS stands for Journaled File System, and it is developed by IBM for AIX Unix. It is an alternative to the Ext file system. It can also be used in place of Ext4, where stability is needed with few resources. It is a handy file system when CPU power is limited.
+(iii)ReiserFS File System:-
+ReiserFS is an alternative to the Ext3 file system. It has improved performance and advanced features. In the earlier time, the ReiserFS was used as the default file system in SUSE Linux, but later it has changed some policies, so SUSE returned to Ext3. This file system dynamically supports the file extension, but it has some drawbacks in performance.
+(iv) XFS File System:-
+XFS file system was considered as high-speed JFS, which is developed for parallel I/O processing. NASA still using this file system with its high storage server (300+ Terabyte server).
+(v)Btrfs File System:-
+Btrfs stands for the B tree file system. It is used for fault tolerance, repair system, fun administration, extensive storage configuration, and more. It is not a good suit for the production system.
+(v)Swap File System:-
+The swap file system is used for memory paging in Linux operating system during the system hibernation. A system that never goes in hibernate state is required to have swap space equal to its RAM size.
+
+
+16Q)How will you pass and access arguments to a script in Linux?
+ANS:-
+Arguments are provided in the terminal when executing the bash script
+Arguments can be passed as:
+scriptName "Arg1" "Arg2"…."Argn" and can be accessed inside the script as $1 , $2 .. $n
+
+17Q)What is the significance of $#?
+ANS:-
+$# shows the count of the arguments passed to the script.
+
+
+18Q) What is the difference between $* and $@?
+ANS:-
+$@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string.
+
+
+19Q)What is the difference between $$ and $!?
+ANS:-
+$$ gives the process id of the currently executing process whereas $! Shows the process id of the process that recently went into the background.
+
+20Q) How will you connect to a database server from Linux?
+Ans:-
+mysql -h hostname -u root -p password
+
+=============================================================================================================================================================
+
+21Q)How can you find out how long the system has been running?
+Ans:-
+We can find this by using the command "uptime".
+The uptime command gives a one line display of the following information:
+->The current time – 10:46:56
+->How long the system has been running – up 13 days
+->How many users are currently logged on – 1 user
+->The system load averages for the past 1, 5, and 15 minutes (0.15, 0.08, 0.08)
+
+22Q)How can any user find out all information about a specific user like his default shell, real-life name, default directory, when and how long he has been using the system?
+Ans:-
+Finger command gives dump of information about a user,including the time of user's last login,the user's home directory and user account's full name
+Syntax:-
+finger "loginName" …
+where loginName is the login name of the user whose information is expected.
+
+
+23Q)How will you copy a file from one machine to other?
+Ans:-
+We can use utilities like "ftp," "scp" or "rsync" to copy a file from one machine to other.
+
+24Q)I want to monitor a continuously updating log file, what command can be used to most efficiently achieve this?
+Ans:-
+We can use tail –f filename. This will cause only the default last 10 lines to be displayed on std o/p which continuously shows the updating part of the file.
+
+25Q)I want to connect to a remote server and execute some commands, how can I achieve this?
+Ans:-
+We can use ssh to do this
+ssh username@serverIP -p sshport
+Example:-
+-------
+ssh root@122.52.251.171 -p 22
+Once above command is executed, you will be asked to enter the password
+
+
+26Q)What is the significance of $?
+Ans:
+The command $? gives the exit status of the last command successfully executed or not,if it gives "0" then is successful (or) If it gives number between 1-255 that means error.
+
+
+27Q)How can we find the process name from its process id?
+Ans:-
+We can use "ps –p ProcessId"
+
+28Q)How do we create command aliases in a shell?
+Ans:-
+alias Aliasname="Command whose alias is to be created".
+
+29Q)What are the four fundamental components of every file system on Linux?
+Ans:-
+Bootblock, super block, inode block and Datablock are found fundamental components of every file system on Linux.
+
+30Q) What is bash script?
+The bash script is a shell programming language. Generally, we run many types of shell commands from the terminal by typing each command separately that require time and efforts. If we need to run the same commands again then we have to execute all the commands from the terminal again. But using a bash script, we can store many shell command statements in a single bash file and execute the file any time by a single command. Many system administration related tasks, program installation, disk backup, evaluating logs, etc. can be done by using proper bash script.
+
+
+31Q) What are the advantages of using bash scripts?
+Ans:-
+Bash script has many advantages which are described below:
+->It is easy to use and learn.
+->Many manual tasks that need to run frequently can be done automatically by writing a bash script.
+->The sequence of multiple shell commands can be executed by a single command.
+->Bash script written in one Linux operating system can easily execute in other Linux operating system. So, it is portable.
+->Debugging in bash is easier than other programming languages.
+->Command-line syntax and commands that are used in the terminal are similar to the commands and syntax used in bash script.
+
+32Q)Mention the disadvantages of bash scripts
+Ans:-
+Some disadvantages of bash script are mentioned below:
+->It works slower than other languages.
+->The improper script can damage the entire process and generate a complicated error.
+->It is not suitable for developing a large and complex application.
+->It contains less data structure compare to other standard programming languages.
+
+
+
+33Q)How to declare and delete variables in bash?
+Ans:-
+The variable can be declared in bash by data type or without data type. If any bash variable is declared without declare command, then the variable will be treated as a string. Bash variable is declared with declare command to define the data type of the variable at the time declaration.
+–r, -i, -a, -A, -l, -u, -t and –x options can be used with declare command to declare a variable with different data types.
+->unset command is used to remove any bash variable. The variable will be inaccessible or undefined after using unset command.
+
+34Q)How to add comments in a bash script?
+Single line and multi-line comments can be used in bash script. ‘#‘ symbol is used for single-line comment. ‘<<’ symbol with a delimiter and ‘:’ with single (‘) are used for adding multi-line comment.
+
+35Q)Which commands are used to print output in bash?
+Ans:-
+`echo` and `printf` commands can be used to print output in bash. `echo` command is used to print the simple output and `printf` command is used to print the formatted output.
+
+36Q)Is bash a weakly typed language? Why?
+Ans:-
+Yes, bash is considered a weakly or loosely typed language because it does not require to declare the type of the data at the time of variable declaration. All bash variables are treated as a string by default and the type of the variable will be set based on the current value. Bash variables with data types can be defined by using declare command with a particular option. But the options to define data types are limited and don’t support all types of data. For example, float data type can’t be declared by using declare command.
+
+
+37Q)Is separate compiler required for executing a shell program?                          
+Ans:-
+Answer: A separate compiler is not required to execute a shell program. The shell itself interprets the command in the shell program and executes them.
+
+38Q)Basis of shell program relies on what fact?
+Answer: The basis of shell programming relies on the fact that the UNIX shell can accept commands not just only from the keyboard but also from a file.
+
+
+39Q) What are the default permissions of a file when it is created?
+Answer: 666 i.e. rw-rw-rw- is the default permission of a file, when it is created.
+
+40Q)What can be used to modify file permissions?
+Answer: File permissions can be modified using umask.
+
+===================================================================================================================================================================================
+
+
+41Q)What are Shell Variables?
+Answer:-
+Shell variables are the main part of shell programming or scripting. They mainly provide the ability to store and manipulate information within a shell program.
+
+42Q)How to make variables as unchangeable?
+Answer: Variables can be made unchangeable using readonly. For instance, if we want variable ‘a’ value to remain as 10 and not change, then we can achieve this using readonly.
+Example:
+$ a=10
+$ readonly a
+
+
+43Q)How variables can be wiped out?
+Ans: Variables can be wiped out or erased using the unset command.
+Example:
+$ a =20
+$ unset a
+Upon using the above command the variable ‘a’ and its value 20 get erased from shell’s memory.
+
+
+
+44Q)What are positional parameters? Explain with an example.
+Answer: Positional parameters are the variables defined by a shell. And they are used whenever we need to convey information to the program. And this can be done by specifying arguments at the command line.
+There is a total of 9 positional parameters present i.e. from $1 to $9.
+Example: $ Test Indian IT Industry has grown very much faster
+In the above statement, positional parameters are assigned like this.
+$0 -> Test (Name of a shell program/script)
+$1 ->Indian
+$2 -> IT and so on.
+
+
+45Q)What does the. (dot) indicate at the beginning of a file name and how should it be listed?
+Answer:- 
+A file name that begins with a. (dot) is called as a hidden file. Whenever we try to list the files it will list all the files except hidden files.
+But, it will be present in the directory. And to list the hidden file we need to use –a option of ls. i.e. $ ls –a.
+
+
+
+46Q) By default, a new file and a new directory that is being created will have how many links?
+Answer:-
+New file contains one link. And a new directory contains two links.
+
+47Q)What are the different blocks of a file system? Explain in brief?
+Ans:-
+Super Block: This block mainly tells about a state of the file system like how big it is, maximum how many files can be accommodated, etc.
+Boot Block: This represents the beginning of a file system. It contains the bootstrap loader program,called "Master Boot record"(MBR) which loads the kernel during system boot up.
+Inode Table: As we know all the entities in a UNIX are treated as files. So, the information related to these files is stored in an Inode table.
+Data Block: This block contains the actual file contents.
+
+
+
+48Q)What are the three different security provisions provided by UNIX for a file or data?
+Answer: Three different security provisions provided by UNIX for a file or data are:
+It provides a unique user id and password to the user, so that unknown or unauthorized person should not be able to access it.
+At the file level, it provides security by providing read, write & execute permissions for accessing the files.
+Lastly, it provides security using file encryption. This method allows encoding a file in an unreadable format. Even if someone succeeds in opening a file, but they cannot read its contents until and unless it is decrypted
+
+
+49Q)What are the three editors available in almost all the versions of UNIX?
+Answer:-
+The three editors are ed, ex & vi.
+
+
+50Q)What is IFS?
+Answer:-
+IFS stands for Internal Field Separator. And it is one of the system variables. By default, its value is space, tab, and a new line. It signifies that in a line where one field or word ends and another begins.
+
+
+"""
